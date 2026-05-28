@@ -1,55 +1,20 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;}
+
+
 body{
     background-color: #fef9f3;
     padding: 0px;
     margin: 0px;
-    
-}
-header div {
-    display: grid;
-    grid-template-columns: 1fr 4fr 2fr ;
-    gap: 40vh;
     align-items: center;
-    margin-bottom: 1vh;
+    font-family: "Poppins", sans-serif ;
 }
-header img{
-    display: grid;
-    height: 4vh;
-    
-}
-header nav {
+
+header{
     display: flex;
-
-}
-header nav a {
-    width: 9vh;
-    margin-left: 50px;
-    padding: 5px;
-    border-radius: 7px;
-    color: #ffffff;
-    background-color: #00642a;
-    text-decoration: none;
-    text-align: center;
-    
-}
-
-header button  {
-    display: flex;
-    background-color: #ffde59;
-    border-radius: 2vw;
-    border: none;
-    height: 4vh;
-    align-items: center;
-    
-}
-header button img {
-    height: 2vh;
-    padding-left: 19vh;
-}
-
-header section{
-    background-image: url(../img/hero/Header_Home.avif);
-    height: 30vh;
-}
-header section div {
-    font-size: 5vh;
+    flex-direction: column;
 }

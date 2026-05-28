@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "Notable";
+    src: url("../fonts/Notable-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal ;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Italic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+    font-weight:bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "CatchyMager";
+    src: url("../fonts/CatchyMager.otf") format("opentype");
+    font-weight:300 ;
+    font-display: swap;
+}
+:root{
+    /* Paleta de colores de la pagina */
+    --background-primario: #fef9f3;
+    --background-secundario: #5ce1e6 ;
+    --fondoColor-primario : #00642a;
+    --navegacionColor-primario : #ffde59;
+    --letrasColor-primario: #fffcfc ;
+    --letrasColor-secundario: #1d1616;
+    /* Paleta de gradientes de la pagina */
+    --fondoColo-secundario: linear-gradient(to right,#89d957, #c9e265 );
+    --fondoNavegacion-Primario:  linear-gradient(to right,#68c7e5 ,#00bf63 ) ;
+    --fondoNavegacion-secndario:  linear-gradient(to right,#0097b2 ,#7ed957 ) ;
+    /* Tipografia de la pagina */
+    --titulo: "Notable", sans-serif;
+    --texto: "Poppins" ,sans-serif ;
+    --descripciones:"CatchyMager", sans-serif ;
+}
+
+.head-principal{ 
+    background-color: #fef9f3;
+    margin-bottom: 5px;
+}
+.head-Secundary {
+    display: flex;
+    background-image: url(../img/hero/Header_Home.avif);
+    height: 30vh;
+    width: 100%;
+}
+
