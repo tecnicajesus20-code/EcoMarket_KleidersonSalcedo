@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 .logoVertical {
     height: 5vh;
 }
@@ -28,6 +29,7 @@
     font-style: italic;
     font-weight: 700;
 }
+
 .boton-navegacion {
     color: var(--letrasColor-primario);
     font-family: var(--texto) ;
@@ -54,6 +56,7 @@
     padding-bottom: 20px;
 }
 .Titulo {
+    
     font-family: var(--titulo);
     font-size: 5vh; 
  }
@@ -75,34 +78,175 @@
     gap: 20px;
     overflow: hidden;
     width: 100%;
-    margin-left: 2vw 4vh 2vh 4vh;
+    margin-top: 130px;
     
 }
 
 .cardproductos{
+    display: inline-block;
     background-color: var(--fondoColor-opaco);
     margin-top: 20px;
     padding: 1vh;
     padding-bottom: 1vh;
     position: relative;
-    display: flex;
     width: max-content;
-    animation: Movimientolateral 5s linear infinite;
+    animation: Movimientolateral 5s ease infinite;
 }
 
 .cardproductos span img {
-    height: 10vh;
+    display: block;
+    height: 40%;
+    width: 100%;
 }
+
+
+
 
 .Categorias {
     display: grid;
- 
-}
-.cardproductos{
     grid-template-columns: 2fr 2fr 2fr;
     justify-content: space-between;
+    gap: 5vh;
 }
+.cardCategorias{
+    height: 25%;
+    width: 25%;
+    padding: 10px;
+    background-image: var(--fondoNavegacion-Primario);
+}
+
+.cardCategorias p{
+    display: flex;
+    text-align: center;
+}
+
+
+
+
+
+
+
 /*HEAD conocenos */
 .logoHorizontal {
     height: 50vh;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    /*Head home*/
+
+    .head-principal> div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    .logoVertical {
+        display: flex;
+        height: 3vh;
+        width: auto;
+        order: 1;
+    }
+    
+    .boton-busqueda{
+        display: flex;
+        width: 55%;
+        order: 2;
+    }
+
+    .head-principal nav {
+        display: flex;
+        justify-content: space-around;
+        order: 3;
+        width: 100%;
+    }
+    .boton-navegacion { 
+        display: inline-block;
+       
+        text-align: center;
+    }
+
+    .head-Secundary > div:first-child {
+        color: var(--letrasColor-primario);   
+        padding-left: 2vw;
+    }
+    .Titulo {
+        padding: 10px;
+        font-family: var(--titulo);
+        font-size: 5vh; 
+    }
+    .descripciones{
+        color: var(--fondoColor-primario);
+        font-family: var(--descripciones);
+        font-size: 2vh;
+        border: solid var(--fondoColor-primario);
+        border-radius: 10px;
+        padding-bottom: 20px;
+        margin: 20px;
+    }
+        .Logo {
+        display: none;
+    }
+
+        /*MAIN Home*/
+        .Muestra { 
+        display: flex;
+        gap: 20px;
+        overflow: hidden;
+        width: 100%;
+        margin-left: 2vw;
+        
+    }
+
+    .cardproductos{
+        display: block;
+        background-color: var(--fondoColor-opaco);
+        margin-top: 50px;
+        padding: 1vh;
+        padding-bottom: 1vh;
+        position: relative;
+        width: max-content;
+    }
+    .cardproductos span img {
+        height: 150px;
+        width: 150px;
+    }
+
+
+
+
+    .Categorias {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        justify-content: space-between;
+        gap: 5vh;
+    }
+    .cardCategorias{
+        height: 25%;
+        width: 25%;
+        padding: 10px;
+        background-image: var(--fondoNavegacion-Primario);
+    }
+
+    .cardCategorias p{
+        display: flex;
+        text-align: center;
+    }
+} 

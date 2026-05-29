@@ -40,7 +40,7 @@
     --navegacionColor-primario : #ffde59;
     --letrasColor-primario: #fffcfc ;
     --letrasColor-secundario: #1d1616;
-    --fondoColor-opaco: #f3e0c93a;
+    --fondoColor-opaco: #f3e0c973;
     /* Paleta de gradientes de la pagina */
     --fondoColor-secundario: linear-gradient(to right,#89d957, #c9e265 );
     --fondoNavegacion-Primario: linear-gradient(to right,#68c7e5 ,#00bf63 ) ;
@@ -57,12 +57,21 @@
 }
 .head-Secundary {
     display: flex;
-    background-image: var(--fondoColor-secundario);
+    background-image: url(../img/hero/header.png);
     justify-content: space-between;
     height: 30vh;
     width: 100%;
 }
 
+@media (max-width: 768px)  {
+
+    .head-Secundary{
+        display: block;
+        height: 22vh;
+        width: 100%;
+        
+    }
+}
 
 
 

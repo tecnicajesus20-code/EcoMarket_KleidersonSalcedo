@@ -18,3 +18,9 @@ header{
     display: flex;
     flex-direction: column;
 }
+
+@media (min-width: 400px) and (orientation: portrait) and (min-resolution: 1dppx) {
+    header {
+        display: block;
+    }
+}
