@@ -40,10 +40,11 @@
     --navegacionColor-primario : #ffde59;
     --letrasColor-primario: #fffcfc ;
     --letrasColor-secundario: #1d1616;
+    --fondoColor-opaco: #f3e0c93a;
     /* Paleta de gradientes de la pagina */
-    --fondoColo-secundario: linear-gradient(to right,#89d957, #c9e265 );
-    --fondoNavegacion-Primario:  linear-gradient(to right,#68c7e5 ,#00bf63 ) ;
-    --fondoNavegacion-secndario:  linear-gradient(to right,#0097b2 ,#7ed957 ) ;
+    --fondoColor-secundario: linear-gradient(to right,#89d957, #c9e265 );
+    --fondoNavegacion-Primario: linear-gradient(to right,#68c7e5 ,#00bf63 ) ;
+    --fondoNavegacion-secndario: linear-gradient(to right,#0097b2 ,#7ed957 ) ;
     /* Tipografia de la pagina */
     --titulo: "Notable", sans-serif;
     --texto: "Poppins" ,sans-serif ;
@@ -56,8 +57,24 @@
 }
 .head-Secundary {
     display: flex;
-    background-image: url(../img/hero/Header_Home.avif);
+    background-image: var(--fondoColor-secundario);
+    justify-content: space-between;
     height: 30vh;
     width: 100%;
 }
 
+
+
+
+
+/* HEAD conocenos*/
+.head-Secundary-conocenos{
+    display: flex;
+    background-color:var(--fondoColor-primario);
+    justify-content: space-between;
+    border-radius: 15px;
+    height: 30vw;
+    width: 70%;
+    margin-left: 15%;
+    
+}

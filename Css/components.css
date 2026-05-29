@@ -45,30 +45,64 @@
 
 
 
-
-
-
-
-
 /* Head home */
 
 .head-Secundary > div:first-child {
-    color: var(--letrasColor-primario);
-    width: 100%;
-    height: 100% ;
-    justify-content: space-between;
-    padding: 2vh;
+    color: var(--letrasColor-primario);   
+    padding-top: 0px;
+    padding-left: 2vw;
+    padding-bottom: 20px;
 }
 .Titulo {
     font-family: var(--titulo);
+    font-size: 5vh; 
  }
 .descripciones{
     font-family: var(--descripciones);
+    font-size: 2vh;
 }
 .Logo {
-    padding-left: 40vw;
     padding-top: 3vh;
-    padding-right: 5vw;
+    padding-right: 5px;
     display: flex;
     height: 80% ;
+}
+
+/*Main-home*/
+
+.Muestra { 
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    width: 100%;
+    margin-left: 2vw 4vh 2vh 4vh;
+    
+}
+
+.cardproductos{
+    background-color: var(--fondoColor-opaco);
+    margin-top: 20px;
+    padding: 1vh;
+    padding-bottom: 1vh;
+    position: relative;
+    display: flex;
+    width: max-content;
+    animation: Movimientolateral 5s linear infinite;
+}
+
+.cardproductos span img {
+    height: 10vh;
+}
+
+.Categorias {
+    display: grid;
+ 
+}
+.cardproductos{
+    grid-template-columns: 2fr 2fr 2fr;
+    justify-content: space-between;
+}
+/*HEAD conocenos */
+.logoHorizontal {
+    height: 50vh;
 }
