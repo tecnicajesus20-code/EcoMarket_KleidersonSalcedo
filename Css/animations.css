@@ -1,9 +1,8 @@
 @keyframes Movimientolateral {
     from {
-        transform: translateX(0);
+        transform: translateX(0%);
     }   
     to {
-        /* Se mueve hacia la izquierda el equivalente a la mitad del contenedor */
         transform: translateX(-50%); 
     }
 }

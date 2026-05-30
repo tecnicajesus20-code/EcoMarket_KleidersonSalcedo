@@ -75,28 +75,41 @@
 
 .Muestra { 
     display: flex;
-    gap: 20px;
-    overflow: hidden;
-    width: 100%;
-    margin-top: 130px;
-    
+    justify-content:space-between;
+    gap: 15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 350px;
+    width: max-content;
+    animation: Movimientolateral 20s linear infinite;
+    margin-top: 2%;
+    padding-bottom: 2%;
+}
+.Muestra:hover{
+    animation-play-state: paused;
+}
+.Muestra::-webkit-scrollbar{
+    display: none;
 }
 
 .cardproductos{
-    display: inline-block;
+    display: block;
     background-color: var(--fondoColor-opaco);
-    margin-top: 20px;
-    padding: 1vh;
-    padding-bottom: 1vh;
-    position: relative;
-    width: max-content;
-    animation: Movimientolateral 5s ease infinite;
+    height: 35vh;
+    width: 350px;
+    padding: 2vh;
+    flex:  0 0 280px;
 }
 
 .cardproductos span img {
     display: block;
-    height: 40%;
-    width: 100%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    transition: all 3s ease;
+}
+.cardproductos span img:hover {
+    transform: scale(1.5);
 }
 
 
@@ -121,8 +134,14 @@
 }
 
 
+.cardCategorias span img {
+    display: block;
+    height: 400px ;
+}
 
-
+.Ultimaimage {
+    width: 30px;
+}
 
 
 
@@ -143,13 +162,8 @@
 
 
 
-
-
-
-
-
-
 @media (max-width: 768px) {
+
     /*Head home*/
 
     .head-principal> div{
@@ -173,17 +187,15 @@
 
     .head-principal nav {
         display: flex;
-        justify-content: space-around;
         order: 3;
         width: 100%;
     }
     .boton-navegacion { 
         display: inline-block;
-       
         text-align: center;
     }
 
-    .head-Secundary > div:first-child {
+    .head-Secunerencdary > div:first-child {
         color: var(--letrasColor-primario);   
         padding-left: 2vw;
     }
@@ -194,7 +206,6 @@
     }
     .descripciones{
         color: var(--fondoColor-primario);
-        font-family: var(--descripciones);
         font-size: 2vh;
         border: solid var(--fondoColor-primario);
         border-radius: 10px;
@@ -206,47 +217,49 @@
     }
 
         /*MAIN Home*/
-        .Muestra { 
-        display: flex;
-        gap: 20px;
-        overflow: hidden;
-        width: 100%;
-        margin-left: 2vw;
         
-    }
+        .Muestra { 
+        display: grid;  
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        height: 100%;
+        margin-left: 2vw;
+        padding-top: 17%;
+        animation: none;
+        justify-content: none;
+         }
 
     .cardproductos{
-        display: block;
         background-color: var(--fondoColor-opaco);
         margin-top: 50px;
         padding: 1vh;
-        padding-bottom: 1vh;
-        position: relative;
-        width: max-content;
+        padding-bottom: 12vh;
+        width: 40vw;
+        animation:none;
     }
     .cardproductos span img {
         height: 150px;
         width: 150px;
     }
-
-
-
-
+    .informacion {
+        text-align: justify;
+        width: 70%;
+    }
     .Categorias {
-        display: grid;
-        grid-template-columns: 2fr 2fr 2fr;
-        justify-content: space-between;
+        display: block;
+        align-items: center;
         gap: 5vh;
     }
     .cardCategorias{
         height: 25%;
-        width: 25%;
+        width: 35%;
         padding: 10px;
+        padding-bottom: 30px;
         background-image: var(--fondoNavegacion-Primario);
     }
 
     .cardCategorias p{
-        display: flex;
-        text-align: center;
+        font-family: var(--titulo);
     }
-} 
+    
+}
