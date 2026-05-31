@@ -1,3 +1,15 @@
+.animacion-carruselLateral {
+        animation: Movimientolateral 20s linear infinite;
+}
+
+.animacion-carruselLateral:hover{
+    animation-play-state: paused;
+}
+.animacionEntrada{
+    animation: Movimientolateral 1.5s ease reverse;
+}
+
+
 @keyframes Movimientolateral {
     from {
         transform: translateX(0%);

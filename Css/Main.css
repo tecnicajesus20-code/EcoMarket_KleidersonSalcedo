@@ -1,3 +1,5 @@
+/*Recursos*/
+
 @font-face {
     font-family: "Notable";
     src: url("../fonts/Notable-Regular.ttf") format("truetype");
@@ -52,24 +54,58 @@
     --texto: "Poppins" ,sans-serif ;
     --descripciones:"CatchyMager", sans-serif ;
 }
+.scroll-Horizontal-escritorio{
+    overflow-x: scroll;
+    overflow-y: hidden;
+} 
+.scroll-Horizontal-escritorio::-webkit-scrollbar {
+    display: none;
+}
 
+.Ignore-movil {
+     display: block;
+}
+
+.Ignore-escritorio {
+     display: none;
+ }
+
+
+
+
+/*HOME*/
 .head-principal{ 
     background-color: #fef9f3;
     margin-bottom: 5px;
 }
+
+.head-principal > div {
+    display: flex;
+    justify-content: space-between;
+}
+
 .head-Secundary {
     display: flex;
     background-image: url(../img/hero/header.png);
     justify-content: space-between;
     height: 30vh;
     width: 100%;
-    border-bottom: solid 5px;
-    border-color: var(--fondoColor-primario);
-    box-shadow:0px 0px 50px #2D5016;
 }
 
-@media (max-width: 768px)  {
+.head-Secundary > div:first-child {
+    color: var(--letrasColor-primario);   
+    padding-top: 0px;
+    padding-left: 2vw;
+    padding-bottom: 20px;
+}
 
+@media (max-width: 768px) and (orientation: portrait) {
+    .head-principal> div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+    }
     .head-Secundary{
         display: block;
         height: 22vh;
@@ -77,10 +113,58 @@
         box-shadow:0px 0px 20px #2D5016;
         
     }
+
+    .head-Secundary > div:first-child {
+        
+        color: var(--letrasColor-primario);   
+    }
+    .scroll-Horizontal-movil {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    } 
+    .scroll-Horizontal-movil::-webkit-scrollbar{
+    display: none;
+    }
+    .Ignore-movil {
+        display: none;
+    }
+    .Ignore-escritorio {
+        display: block;
+    }
 }
 
 
-/* HEAD conocenos*/
+ @media (min-width: 768px) and ( max-width: 1080px){
+    .Ignore-movil {
+        display: block;
+    }
+    .Ignore-escritorio {
+        display: none;
+    }
+}
+
+
+/*PRODUCTOS*/
+ .head-Secundary-productos {
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/hero/header.png);
+    height: 16vh;
+    width: 75%;
+    margin: 3vh;
+    margin-left: 13vw;
+    border-radius: 5vh;
+}
+.muestra-Productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    margin: 3vh;
+    margin-right: -4vh;
+    height: auto;
+    width: auto;
+}
+
+/*CONOCENOS */
 .head-Secundary-conocenos{
     display: flex;
     background-color:var(--fondoColor-primario);
@@ -91,3 +175,4 @@
     margin-left: 15%;
     
 }
+
