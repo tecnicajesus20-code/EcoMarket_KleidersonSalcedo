@@ -1,0 +1,31 @@
+.animacion-carruselLateral {
+        animation: Movimientolateral 20s linear infinite;
+}
+
+.animacion-carruselLateral:hover{
+    animation-play-state: paused;
+}
+.animacionEntrada{
+    animation: Movimientolateral 1.5s ease reverse;
+}
+
+.animacionEntradaSuperior{
+    animation: EntradaY 1s ease forwards;
+}
+@keyframes Movimientolateral {
+    from {
+        transform: translateX(0%);
+    }   
+    to {
+        transform: translateX(-50%); 
+    }
+}
+
+@keyframes EntradaY  {
+    from{
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(50%) ;
+    }
+}
